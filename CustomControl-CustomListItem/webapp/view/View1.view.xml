@@ -1,0 +1,18 @@
+<mvc:View controllerName="custom.controls.CustomControl-CustomListItem.controller.View1" xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+	xmlns="sap.m" xmlns:custom="custom.controls.CustomControl-CustomListItem.customControl">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+						<custom:CustomList items="{/ProductCollection}">
+							<custom:items>
+							<custom:CustomStandardListItem backgroundColor="{color}" title="{Name}"/>
+							</custom:items>
+						</custom:CustomList>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>

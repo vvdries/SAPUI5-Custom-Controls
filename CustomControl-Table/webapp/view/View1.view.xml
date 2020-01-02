@@ -1,0 +1,31 @@
+<mvc:View controllerName="custom.controls.CustomControl-Table.controller.View1" xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+	xmlns="sap.m" xmlns:custom="custom.controls.CustomControl-Table.customControl">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+						<custom:CustomTable items="{/ProductCollection}">
+							<custom:columns>
+								<custom:CustomColumn width="12em">
+									<Text text="Product Id"/>
+								</custom:CustomColumn>
+								<custom:CustomColumn width="12em">
+									<Text text="Product name"/>
+								</custom:CustomColumn>
+							</custom:columns>
+							<custom:items>
+								<custom:CustomColumnListItem backgroundColor="{color}">
+									<custom:cells>
+										<Text text="{ProductId}"/>
+										<Text text="{Name}"/>
+									</custom:cells>
+								</custom:CustomColumnListItem>
+							</custom:items>
+						</custom:CustomTable>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
